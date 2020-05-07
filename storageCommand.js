@@ -17,7 +17,7 @@ for await (const result of node.add("Here's a simple test")) {
 
 ~~~~~~~~~~~~~~~~~~~~~~
 //To retrieve
-const chunks = []
+var chunks = []
 for await (const chunk of node.cat("QmXzCSfyPdmSiysB1R9Lc7Jf4kbNvEvcZU7T79UB7Z5qM6")) {
   chunks.push(chunk)
 }
