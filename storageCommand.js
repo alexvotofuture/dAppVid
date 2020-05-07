@@ -1,3 +1,4 @@
+//To add a file to IPFS and return the CID
 async function addContentToIPFS(){
     for await (const result of node.add(contentToAdd)) {
         if (result && result.cid) {  
@@ -20,7 +21,7 @@ for await (const result of node.add("Here's a simple test")) {
 
 
 ~~~~~~~~~~~~~~~~~~~~~~
-//To retrieve
+//To retrieve a file at a CID from IPFS and return its content
 var receivedBuffer = []
 for await (const chunk of node.cat("QmdrRpsuyRWyAVwtkNLViAENqEbB8iC6szFzbwxGuhSVWB")) {
   receivedBuffer.push(chunk)
