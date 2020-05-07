@@ -1,13 +1,17 @@
-//Place this into the JS console on the html webpage to send a string to IPFS
-async function store () {
-    const toStore = "This is a test, and only a test!"
-
-    for await (const file of node.add(toStore)) {
-      if (file && file.cid) {
-        console.log('successfully stored', file.cid)
-      }
+async function addContentToIPFS(){
+    for await (const result of node.add(contentToAdd)) {
+        if (result && result.cid) {  
+            return(result.path); //return the IPFS hash of the content we added
+            //console.log("CID of content added to IPFS" + result.path)
+            //console.log('successfully stored', file.cid) //not needed
+        }
     }
-  }
+}
+const contentToAdd = "This is a test";
+addContentToIPFS(contentToAdd).then(function(hash){
+console.log(hash);
+});
+
 
 //Or, try this simpler one:
 for await (const result of node.add("Here's a simple test")) {
