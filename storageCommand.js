@@ -8,3 +8,8 @@ async function store () {
       }
     }
   }
+
+//Or, try this simpler one:
+for await (const result of node.add("Charzardzzz")) {
+  console.log(result)
+}
