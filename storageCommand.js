@@ -10,6 +10,6 @@ async function store () {
   }
 
 //Or, try this simpler one:
-for await (const result of node.add("Charzardzzz")) {
-  console.log(result)
+for await (const result of node.add("Here's a simple test")) {
+  console.log(result.path)
 }
