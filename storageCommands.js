@@ -1,3 +1,7 @@
+/*
+These are commands you can use in your browser's JS console to add or read content using the in-browser IPFS node.
+*/
+
 //To add a file to IPFS and return the CID
 async function addContentToIPFS(){ //create an async function
     for await (const result of node.add(contentToAdd)) { //wait for the result of adding the content, then save the result as "result"

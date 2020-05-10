@@ -16,15 +16,13 @@
 <!-- Import the IPFS node setup script -->
 <script type="text/javascript" src="ipfsload.js"></script>
 
+<h3>IPFS Node status: <div id="status">offline</div></h3>
 
-<!-- Display video to be played (this is a placeholder that will be updated once the string is pulled from the smart contract) -->
-<h1>Playing Video: <div id=content>loading from Ethereum...</div> </h1>
+<!-- Display content pulled from IPFS (this is a placeholder that will be updated once the string is pulled from the smart contract) -->
+<div id=content>loading from IPFS...</div>
 
 <!-- Execute Web3 code to pull the string from the designated smart contract via Infura, then update the container above -->
-<script type="text/javascript" src="pullContract.js"></script>
-
-
-<h3>IPFS Node status: </h3> <h3 id="status">offline</h3>
+<!-- <script type="text/javascript" src="pullContract.js"></script> -->
 
 <p id="videoContainer"></p>
 
