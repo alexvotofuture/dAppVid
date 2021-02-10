@@ -102,9 +102,9 @@ async function getContractString(){
 getContractString()
 
 //~~~~~~~~~~~~~~~~IPFS FUNCTIONS~~~~~~~~~~~~~~~~~~~~~~~
-//const testContent = "QmZebViw8iYFySZwpCeC2CyF6ayqMZTfURYdvGe6mgKeQw" //rickroll vid test (Ethereum result should go here)
+const testContent = "QmZebViw8iYFySZwpCeC2CyF6ayqMZTfURYdvGe6mgKeQw" //rickroll vid test (Ethereum result should go here)
 //const testContent = "QmdUP6MmaWuX5NU6uMm1uVubGRAnN345M9Lm8RH9oHCpbq" //rickroll vid + header
-const testContent = "QmZ4tDuvesekSs4qM5ZBKpXiZGun7S2CYtEZRB3DYXkjGx"; //"Hello Worlds"
+//const testContent = "QmZ4tDuvesekSs4qM5ZBKpXiZGun7S2CYtEZRB3DYXkjGx"; //"Hello Worlds"
 
 loadIPFS(testContent); //Feed the string from the smart contract (the CID we need) into the IPFS functions.
 
